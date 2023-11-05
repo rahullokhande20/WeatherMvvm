@@ -7,23 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804D52FE2ACFB7720099866D /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D52FD2ACFB7720099866D /* WeatherCell.swift */; };
+		804D53012ACFFF5F0099866D /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 804D53002ACFFF5F0099866D /* MBProgressHUD */; };
 		8056D1932ACD4F4B00CE607E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8056D1922ACD4F4B00CE607E /* AppDelegate.swift */; };
 		8056D1952ACD4F4B00CE607E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8056D1942ACD4F4B00CE607E /* SceneDelegate.swift */; };
-		8056D1972ACD4F4B00CE607E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8056D1962ACD4F4B00CE607E /* ViewController.swift */; };
 		8056D19A2ACD4F4B00CE607E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8056D1982ACD4F4B00CE607E /* Main.storyboard */; };
 		8056D19C2ACD4F4C00CE607E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8056D19B2ACD4F4C00CE607E /* Assets.xcassets */; };
 		8056D19F2ACD4F4C00CE607E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8056D19D2ACD4F4C00CE607E /* LaunchScreen.storyboard */; };
+		806472082ACEADB800C4B1B2 /* ViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472072ACEADB800C4B1B2 /* ViewControllerProvider.swift */; };
+		8064720A2ACEADF600C4B1B2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472092ACEADF600C4B1B2 /* Coordinator.swift */; };
+		8064720C2ACEAE3E00C4B1B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064720B2ACEAE3E00C4B1B2 /* LoginViewController.swift */; };
+		8064720E2ACEAE5400C4B1B2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064720D2ACEAE5400C4B1B2 /* LoginViewModel.swift */; };
+		806472102ACEAE6500C4B1B2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064720F2ACEAE6500C4B1B2 /* RegisterViewController.swift */; };
+		806472122ACEAE7400C4B1B2 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472112ACEAE7400C4B1B2 /* RegisterViewModel.swift */; };
+		806472142ACEAE8800C4B1B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472132ACEAE8800C4B1B2 /* ProfileViewController.swift */; };
+		806472162ACEAE9400C4B1B2 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472152ACEAE9400C4B1B2 /* ProfileViewModel.swift */; };
+		806472182ACEAEA000C4B1B2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472172ACEAEA000C4B1B2 /* DetailsViewController.swift */; };
+		8064721A2ACEAEAE00C4B1B2 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472192ACEAEAE00C4B1B2 /* DetailsViewModel.swift */; };
+		8064721C2ACEAEF300C4B1B2 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064721B2ACEAEF300C4B1B2 /* BindingTextField.swift */; };
+		806472202ACEB65900C4B1B2 /* ApiEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064721F2ACEB65900C4B1B2 /* ApiEndPoints.swift */; };
+		806472232ACEB77700C4B1B2 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 806472222ACEB77700C4B1B2 /* IQKeyboardManagerSwift */; };
+		806472262ACEB9EF00C4B1B2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 806472252ACEB9EF00C4B1B2 /* FirebaseAuth */; };
+		806472282ACEB9EF00C4B1B2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 806472272ACEB9EF00C4B1B2 /* FirebaseFirestore */; };
+		8064722A2ACEB9EF00C4B1B2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 806472292ACEB9EF00C4B1B2 /* FirebaseStorage */; };
+		8064722D2ACEBA6700C4B1B2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8064722C2ACEBA6700C4B1B2 /* Kingfisher */; };
+		8064722F2ACEBAB700C4B1B2 /* UserAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064722E2ACEBAB700C4B1B2 /* UserAuthService.swift */; };
+		806472312ACEBB5F00C4B1B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472302ACEBB5F00C4B1B2 /* User.swift */; };
+		806472342ACEBBFF00C4B1B2 /* UserDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472332ACEBBFF00C4B1B2 /* UserDetailsService.swift */; };
+		806472362ACEC8AD00C4B1B2 /* ImageStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472352ACEC8AD00C4B1B2 /* ImageStoreService.swift */; };
+		806472382ACED5AF00C4B1B2 /* HttpRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472372ACED5AF00C4B1B2 /* HttpRequestHandler.swift */; };
+		8064723A2ACED6A600C4B1B2 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472392ACED6A600C4B1B2 /* Weather.swift */; };
+		8064723C2ACED6B300C4B1B2 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064723B2ACED6B300C4B1B2 /* City.swift */; };
+		806472402ACEEFC900C4B1B2 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064723F2ACEEFC900C4B1B2 /* WeatherService.swift */; };
+		806472422ACF1E5700C4B1B2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806472412ACF1E5700C4B1B2 /* UIViewControllerExtension.swift */; };
+		806472442ACF2DA500C4B1B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806472432ACF2DA500C4B1B2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		804D52FD2ACFB7720099866D /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		8056D18F2ACD4F4B00CE607E /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8056D1922ACD4F4B00CE607E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8056D1942ACD4F4B00CE607E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8056D1962ACD4F4B00CE607E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8056D1992ACD4F4B00CE607E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8056D19B2ACD4F4C00CE607E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8056D19E2ACD4F4C00CE607E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8056D1A02ACD4F4C00CE607E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806472072ACEADB800C4B1B2 /* ViewControllerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProvider.swift; sourceTree = "<group>"; };
+		806472092ACEADF600C4B1B2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8064720B2ACEAE3E00C4B1B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8064720D2ACEAE5400C4B1B2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8064720F2ACEAE6500C4B1B2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		806472112ACEAE7400C4B1B2 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		806472132ACEAE8800C4B1B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		806472152ACEAE9400C4B1B2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		806472172ACEAEA000C4B1B2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		806472192ACEAEAE00C4B1B2 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		8064721B2ACEAEF300C4B1B2 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
+		8064721F2ACEB65900C4B1B2 /* ApiEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoints.swift; sourceTree = "<group>"; };
+		8064722E2ACEBAB700C4B1B2 /* UserAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthService.swift; sourceTree = "<group>"; };
+		806472302ACEBB5F00C4B1B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		806472332ACEBBFF00C4B1B2 /* UserDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsService.swift; sourceTree = "<group>"; };
+		806472352ACEC8AD00C4B1B2 /* ImageStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStoreService.swift; sourceTree = "<group>"; };
+		806472372ACED5AF00C4B1B2 /* HttpRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHandler.swift; sourceTree = "<group>"; };
+		806472392ACED6A600C4B1B2 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		8064723B2ACED6B300C4B1B2 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		8064723F2ACEEFC900C4B1B2 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		806472412ACF1E5700C4B1B2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		806472432ACF2DA500C4B1B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +81,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804D53012ACFFF5F0099866D /* MBProgressHUD in Frameworks */,
+				806472232ACEB77700C4B1B2 /* IQKeyboardManagerSwift in Frameworks */,
+				8064722A2ACEB9EF00C4B1B2 /* FirebaseStorage in Frameworks */,
+				806472262ACEB9EF00C4B1B2 /* FirebaseAuth in Frameworks */,
+				806472282ACEB9EF00C4B1B2 /* FirebaseFirestore in Frameworks */,
+				8064722D2ACEBA6700C4B1B2 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +112,93 @@
 		8056D1912ACD4F4B00CE607E /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				806472322ACEBB6400C4B1B2 /* Models */,
+				8064721E2ACEB64600C4B1B2 /* CommonFiles */,
+				8064721D2ACEB4A300C4B1B2 /* Protocols */,
+				806472032ACEAD5B00C4B1B2 /* Login */,
+				806472042ACEAD6700C4B1B2 /* Register */,
+				806472062ACEAD8100C4B1B2 /* Profile */,
+				806472052ACEAD6F00C4B1B2 /* Details */,
 				8056D1922ACD4F4B00CE607E /* AppDelegate.swift */,
 				8056D1942ACD4F4B00CE607E /* SceneDelegate.swift */,
-				8056D1962ACD4F4B00CE607E /* ViewController.swift */,
 				8056D1982ACD4F4B00CE607E /* Main.storyboard */,
 				8056D19B2ACD4F4C00CE607E /* Assets.xcassets */,
 				8056D19D2ACD4F4C00CE607E /* LaunchScreen.storyboard */,
 				8056D1A02ACD4F4C00CE607E /* Info.plist */,
+				806472432ACF2DA500C4B1B2 /* GoogleService-Info.plist */,
+				806472072ACEADB800C4B1B2 /* ViewControllerProvider.swift */,
+				806472092ACEADF600C4B1B2 /* Coordinator.swift */,
+				8064721B2ACEAEF300C4B1B2 /* BindingTextField.swift */,
+				806472412ACF1E5700C4B1B2 /* UIViewControllerExtension.swift */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		806472032ACEAD5B00C4B1B2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8064720B2ACEAE3E00C4B1B2 /* LoginViewController.swift */,
+				8064720D2ACEAE5400C4B1B2 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		806472042ACEAD6700C4B1B2 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				8064720F2ACEAE6500C4B1B2 /* RegisterViewController.swift */,
+				806472112ACEAE7400C4B1B2 /* RegisterViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		806472052ACEAD6F00C4B1B2 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				806472172ACEAEA000C4B1B2 /* DetailsViewController.swift */,
+				806472192ACEAEAE00C4B1B2 /* DetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		806472062ACEAD8100C4B1B2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				806472132ACEAE8800C4B1B2 /* ProfileViewController.swift */,
+				806472152ACEAE9400C4B1B2 /* ProfileViewModel.swift */,
+				804D52FD2ACFB7720099866D /* WeatherCell.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8064721D2ACEB4A300C4B1B2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8064722E2ACEBAB700C4B1B2 /* UserAuthService.swift */,
+				806472332ACEBBFF00C4B1B2 /* UserDetailsService.swift */,
+				806472352ACEC8AD00C4B1B2 /* ImageStoreService.swift */,
+				806472372ACED5AF00C4B1B2 /* HttpRequestHandler.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8064721E2ACEB64600C4B1B2 /* CommonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8064721F2ACEB65900C4B1B2 /* ApiEndPoints.swift */,
+				8064723F2ACEEFC900C4B1B2 /* WeatherService.swift */,
+			);
+			path = CommonFiles;
+			sourceTree = "<group>";
+		};
+		806472322ACEBB6400C4B1B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				806472302ACEBB5F00C4B1B2 /* User.swift */,
+				806472392ACED6A600C4B1B2 /* Weather.swift */,
+				8064723B2ACED6B300C4B1B2 /* City.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +217,14 @@
 			dependencies = (
 			);
 			name = Weather;
+			packageProductDependencies = (
+				806472222ACEB77700C4B1B2 /* IQKeyboardManagerSwift */,
+				806472252ACEB9EF00C4B1B2 /* FirebaseAuth */,
+				806472272ACEB9EF00C4B1B2 /* FirebaseFirestore */,
+				806472292ACEB9EF00C4B1B2 /* FirebaseStorage */,
+				8064722C2ACEBA6700C4B1B2 /* Kingfisher */,
+				804D53002ACFFF5F0099866D /* MBProgressHUD */,
+			);
 			productName = Weather;
 			productReference = 8056D18F2ACD4F4B00CE607E /* Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +253,12 @@
 				Base,
 			);
 			mainGroup = 8056D1862ACD4F4B00CE607E;
+			packageReferences = (
+				806472212ACEB77700C4B1B2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				806472242ACEB9EF00C4B1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8064722B2ACEBA6700C4B1B2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				804D52FF2ACFFF5F0099866D /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
 			productRefGroup = 8056D1902ACD4F4B00CE607E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8056D19F2ACD4F4C00CE607E /* LaunchScreen.storyboard in Resources */,
+				806472442ACF2DA500C4B1B2 /* GoogleService-Info.plist in Resources */,
 				8056D19C2ACD4F4C00CE607E /* Assets.xcassets in Resources */,
 				8056D19A2ACD4F4B00CE607E /* Main.storyboard in Resources */,
 			);
@@ -138,9 +287,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8056D1972ACD4F4B00CE607E /* ViewController.swift in Sources */,
+				8064720C2ACEAE3E00C4B1B2 /* LoginViewController.swift in Sources */,
+				806472362ACEC8AD00C4B1B2 /* ImageStoreService.swift in Sources */,
+				806472422ACF1E5700C4B1B2 /* UIViewControllerExtension.swift in Sources */,
+				804D52FE2ACFB7720099866D /* WeatherCell.swift in Sources */,
+				8064722F2ACEBAB700C4B1B2 /* UserAuthService.swift in Sources */,
+				806472342ACEBBFF00C4B1B2 /* UserDetailsService.swift in Sources */,
+				806472142ACEAE8800C4B1B2 /* ProfileViewController.swift in Sources */,
+				8064721C2ACEAEF300C4B1B2 /* BindingTextField.swift in Sources */,
+				806472082ACEADB800C4B1B2 /* ViewControllerProvider.swift in Sources */,
+				8064721A2ACEAEAE00C4B1B2 /* DetailsViewModel.swift in Sources */,
+				806472312ACEBB5F00C4B1B2 /* User.swift in Sources */,
+				806472102ACEAE6500C4B1B2 /* RegisterViewController.swift in Sources */,
+				8064720A2ACEADF600C4B1B2 /* Coordinator.swift in Sources */,
 				8056D1932ACD4F4B00CE607E /* AppDelegate.swift in Sources */,
+				8064723A2ACED6A600C4B1B2 /* Weather.swift in Sources */,
+				806472162ACEAE9400C4B1B2 /* ProfileViewModel.swift in Sources */,
+				806472402ACEEFC900C4B1B2 /* WeatherService.swift in Sources */,
 				8056D1952ACD4F4B00CE607E /* SceneDelegate.swift in Sources */,
+				806472122ACEAE7400C4B1B2 /* RegisterViewModel.swift in Sources */,
+				8064720E2ACEAE5400C4B1B2 /* LoginViewModel.swift in Sources */,
+				8064723C2ACED6B300C4B1B2 /* City.swift in Sources */,
+				806472182ACEAEA000C4B1B2 /* DetailsViewController.swift in Sources */,
+				806472382ACED5AF00C4B1B2 /* HttpRequestHandler.swift in Sources */,
+				806472202ACEB65900C4B1B2 /* ApiEndPoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,24 +457,28 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GV7RKYZWWR;
+				DEVELOPMENT_TEAM = 2FRSV3LDWR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to the photo library to choose photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Weather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weather.rahul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,24 +489,28 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GV7RKYZWWR;
+				DEVELOPMENT_TEAM = 2FRSV3LDWR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to the photo library to choose photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Weather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weather.rahul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +536,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		804D52FF2ACFFF5F0099866D /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		806472212ACEB77700C4B1B2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.3.0;
+			};
+		};
+		806472242ACEB9EF00C4B1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		8064722B2ACEBA6700C4B1B2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		804D53002ACFFF5F0099866D /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 804D52FF2ACFFF5F0099866D /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		806472222ACEB77700C4B1B2 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 806472212ACEB77700C4B1B2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		806472252ACEB9EF00C4B1B2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 806472242ACEB9EF00C4B1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		806472272ACEB9EF00C4B1B2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 806472242ACEB9EF00C4B1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		806472292ACEB9EF00C4B1B2 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 806472242ACEB9EF00C4B1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		8064722C2ACEBA6700C4B1B2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8064722B2ACEBA6700C4B1B2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8056D1872ACD4F4B00CE607E /* Project object */;
 }
